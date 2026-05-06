@@ -1,0 +1,142 @@
+/* ─── FONTS ─── */
+
+@font-face {
+  font-family: 'PPEditorialOld';
+  src: url('/fonts/PPEditorialOld-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPEditorialOld';
+  src: url('/fonts/PPEditorialOld-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPEditorialOld';
+  src: url('/fonts/PPEditorialOld-Ultrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPEditorialOld';
+  src: url('/fonts/PPEditorialOld-UltraboldItalic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Extrabold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ─── DESIGN TOKENS ─── */
+:root {
+  --color-bg: #F8F7F0;
+  --color-surface: #EDE9E0;
+  --color-border: #E2DDD6;
+  --color-text: #2C1810;
+  --color-muted: #9E8878;
+  --color-accent: #DEC4E0;
+  --color-chestnut: #7D4F31;
+
+  /* Projects cards bands */
+  --band-1: #DDD0E8;
+  --band-2: #E8D4C8;
+  --band-3: #C8D4C0;
+  --band-4: #D4C4A0;
+
+  /* Typography */
+  --font-heading: 'PPEditorialOld', Georgia, serif;
+  --font-body: 'PPNeueMontreal', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-padding: 100px 48px;
+  --max-width: 1200px;
+}
+
+/* ─── BASE RESET ─── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: nome;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ─── TYPOGRAPHY ─── */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 800;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
